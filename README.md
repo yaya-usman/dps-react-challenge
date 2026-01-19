@@ -1,51 +1,60 @@
-# DPS Frontend Coding Challenge: German Address Validator #
+# 🇩🇪 German Address Validator
 
-Your task is to build a small web application that validates German postal codes (PLZ) and localities using the **Open PLZ API**.
-API reference: https://www.openplzapi.org/en/germany.
+A simple, modern and responsive web application designed to validate German postal codes (PLZ) and localities in real-time.It leverages the **Open PLZ API** to provide an effortless user experience for address verification.
 
-## Project Setup
+---
 
-This repository comes **pre-configured with React and Vite**. You are free to use additional tools or libraries.
-You may either fork this repository or create a new one and restructure the application as you see fit.
+## ✨ Features
 
-## Environment Setup
+- **🚀 Real-time Validation**: Instantly verifies localities and postal codes as you type.
+- **⏱️ Smart Debouncing**: Implements a 1-second debounce to minimize API calls and ensure a smooth UI.
+- **🔄 Cross-Field Sync**: 
+  - **By Locality**: Automatically suggests postal codes. If multiple exist, it transforms into an intuitive dropdown.
+  - **By PLZ**: Instantly fetches the corresponding city/town name.
+- **🎨 Modern Design**: Features a simple interface, Plus Jakarta Sans typography, and minimal fluid animations.
+- **📱 Responsive Layout**: Fully optimized for desktop, tablet, and mobile viewing.
+- **🛡️ Error Handling**: Real-time feedback for invalid inputs with graceful error states.
 
-Ensure you have Node.js (v14.x or later) and npm (v6.x or later) installed.  
-To set up and run the application, execute the following commands:
+---
 
-```
-npm install
+## 🛠️ Technologies Involved
+
+- **[React](https://reactjs.org/)**: A JavaScript library for building user interfaces.
+- **[Vite](https://vitejs.dev/)**: Next-generation frontend tooling for blazing-fast development.
+- **[TypeScript](https://www.typescriptlang.org/)**: Static typing for more reliable and maintainable code.
+- **[Open PLZ API](https://www.openplzapi.org/)**: The engine behind the German address data.
+- **CSS3**: Custom variables, flexbox, and keyframe animations for a premium feel.
+
+---
+
+## 🚀 How to Run
+
+### Prerequisites
+- Node.js (v18.x or later)
+- npm
+
+### Installation
+1. Clone the project.
+2. Install dependencies:
+   ```bash
+   npm install
+
+   or (if you are facing dep. issues)
+
+    npm install --force 
+   ```
+
+### Development
+Start the development server:
+```bash
 npm run dev
 ```
+The app will be available at `http://localhost:3000`.
 
-The application will then be accessible at http://localhost:3000.
+---
 
-## Project Description
+## 📄 License
+This project was created as part of a technical challenge for **Digital Product School❤️**.
 
-Create an address input form with two required fields.
-- **Locality** (city/town name)
-- **Postal Code (PLZ)**
-These fields must validate each other using live data from the Open PLZ API.
-
-**Usage scenarios.**
-1. Lookup by locality. When the user types a city/town name:
-- If one postal code exists for this locality → automatically fill the PLZ field.
-- If multiple postal codes exist → convert the PLZ field into a dropdown.
-2. Lookup by postal code. When the user enters a PLZ:
-- If PLZ is valid → automatically fill the locality field.
-- If PLZ is invalid → show an error message.
-
-[Optional task] **Debounce**. Implement a 1-second debounce on both inputs before API calls.
-
-## AI Usage Rules
-
-You are allowed to use AI tools to complete this task. However, **transparency is required**.
-Please include a small artifact folder or a markdown section with:
-- Links to ChatGPT / Claude / Copilot conversations
-- Any prompts used (copy/paste the prompt text if links are private)
-- Notes about what parts were AI-assisted
-- Any generated code snippets you modified or rejected
-
-This helps us understand your workflow and decision-making process, not to judge AI usage.
-
-Happy coding!
+---
+*Powered by Open PLZ API*
