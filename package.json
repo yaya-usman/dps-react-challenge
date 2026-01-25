@@ -1,47 +1,46 @@
 {
-  "name": "dps-react-frontend",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "lint": "eslint . --ext ts,tsx,js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
-    "test": "vitest"
-  },
-  "dependencies": {
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0"
-  },
-  "devDependencies": {
-    "@types/react": "^19.2.6",
-    "@types/react-dom": "^19.2.3",
-    "@typescript-eslint/eslint-plugin": "^8.47.0",
-    "@typescript-eslint/parser": "^8.47.0",
-    "@vitejs/plugin-react-swc": "^4.2.2",
-    "eslint": "^9.39.1",
-    "eslint-plugin-react-hooks": "^7.0.1",
-    "eslint-plugin-react-refresh": "0.4.24",
-    "typescript": "^5.9.3",
-    "vite": "^7.2.2",
-    "vitest": "^1.0.0",
-    "@testing-library/react": "^14.0.0",
-    "@testing-library/jest-dom": "^6.0.0",
-    "@testing-library/user-event": "^14.5.0",
-    "jsdom": "^22.1.0"
-  },
-  "overrides": {
-    "vite": {
-      "rollup": "npm:@rollup/wasm-node"
-    }
-  }
-  ,
-  "vitest": {
-    "test": {
-      "environment": "jsdom",
-      "globals": true,
-      "setupFiles": "src/setupTests.ts"
-    }
-  }
+	"name": "dps-react-frontend",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc && vite build",
+		"lint": "eslint . --ext ts,tsx,js,jsx --report-unused-disable-directives --max-warnings 0",
+		"preview": "vite preview",
+		"test": "vitest"
+	},
+	"dependencies": {
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
+	},
+	"devDependencies": {
+		"@types/react": "^18.2.26",
+		"@types/react-dom": "^18.2.6",
+		"@typescript-eslint/eslint-plugin": "^8.47.0",
+		"@typescript-eslint/parser": "^8.47.0",
+		"@vitejs/plugin-react-swc": "^4.2.2",
+		"eslint": "^9.39.1",
+		"eslint-plugin-react-hooks": "^7.0.1",
+		"eslint-plugin-react-refresh": "0.4.24",
+		"typescript": "^5.9.3",
+		"vite": "^7.2.2",
+		"vitest": "^1.0.0",
+		"@testing-library/react": "^15.0.7",
+		"@testing-library/jest-dom": "^6.0.0",
+		"@testing-library/user-event": "^14.5.0",
+		"jsdom": "^22.1.0"
+	},
+	"overrides": {
+		"vite": {
+			"rollup": "npm:@rollup/wasm-node"
+		}
+	},
+	"vitest": {
+		"test": {
+			"environment": "jsdom",
+			"globals": true,
+			"setupFiles": "src/setupTests.ts"
+		}
+	}
 }
